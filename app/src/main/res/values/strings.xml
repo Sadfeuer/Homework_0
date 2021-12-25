@@ -1,17 +1,4 @@
 <resources>
-    <string name="app_name">Homework_10c</string>
-    <string name="directions">DIRECTIONS</string>
-    <string name="call">CALL</string>
-    <string name="save">SAVE</string>
-    <string name="website">WEBSITE</string>
-    <string name="posts">Posts</string>
-    <string name="followers">Followers</string>
-    <string name="following">Following</string>
-    <string name="address">Address</string>
-    <string name="description">Description</string>
-    <string name="personal_page">Personal page</string>
-    <string name="username">Username</string>
-    <string name="onetwofive">125</string>
-    <string name="twozeroK">20K</string>
-    <string name="twotwo">22</string>
+    <string name="app_name">Homework_10d</string>
+    <string name="android_cource">Android cource</string>
 </resources>

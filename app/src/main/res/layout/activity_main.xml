@@ -1,333 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/personal_page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="@string/personal_page"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/info"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="77dp"
-            android:layout_height="76dp"
-            android:layout_margin="10dp"
-
-            android:background="@drawable/circle"
-            android:src="@drawable/ic_baseline_mood_24" />
-
-        <LinearLayout
-            android:id="@+id/posts"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/countPosts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/onetwofive"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/textPosts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/posts"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/followers_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/countFollowers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/twozeroK"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/followers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/followers"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/following_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/counting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/twotwo"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/following"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/following"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/username"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
-    <TextView
-        android:id="@+id/address"
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="@string/android_cource"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="@string/address"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="@string/description"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <LinearLayout
-        android:id="@+id/line_second"
-        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:gravity="center"
-        android:orientation="horizontal">
+        app:constraint_referenced_ids="left_card, right_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/central_card"
+        app:layout_constraintVertical_weight="1" />
 
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp" />
 
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp" />
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp" />
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp" />
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp" />
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/options"
-        android:layout_width="match_parent"
+    <include
+        android:id="@+id/central_card"
+        layout="@layout/member"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@id/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_weight="1" />
 
-        <LinearLayout
-            android:id="@+id/directions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+    <include
+        android:id="@+id/left_card"
+        layout="@layout/member"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_card"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/central_card" />
 
-            <ImageView
-                android:id="@+id/icon_direction"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_directions_24" />
-
-            <TextView
-                android:id="@+id/directions_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/directions"
-                android:textColor="@color/lazure"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageCall"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_call_24" />
-
-            <TextView
-                android:id="@+id/textCall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/call"
-                android:textColor="@color/lazure"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/star"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_star_24" />
-
-            <TextView
-                android:id="@+id/save_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/save"
-                android:textColor="@color/lazure"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/website"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/insert"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_insert_link_24" />
-
-            <TextView
-                android:id="@+id/website_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/website"
-                android:textColor="@color/lazure"
-                android:textSize="14dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <include
+        android:id="@+id/right_card"
+        layout="@layout/member"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/left_card"
+        app:layout_constraintTop_toBottomOf="@id/central_card" />
 
     <ImageView
-        android:src="@drawable/rectangle"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"/>
+        android:id="@+id/search_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
 
-    <LinearLayout
-        android:id="@+id/bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"  />
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"  />
-
-        <ImageView
-            android:src="@drawable/rectangle"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"  />
-
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
