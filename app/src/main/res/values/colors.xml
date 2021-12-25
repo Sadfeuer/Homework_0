@@ -7,6 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#B83737</color>
-    <color name="grey">#C4C4C4</color>
+
+    <color name="khorne_red">#6a0001</color>
+    <color name="druchii_violet">#842994</color>
+    <color name="nuln_oil">#171310</color>
+    <color name="screamer_pink">#ab0040</color>
+    <color name="inneadian_yellow">#CDC75C</color>
+    <color name="caliban_green">#005726</color>
+    <color name="macragge_blue">#0d407f</color>
+    <color name="space_wolves_grey">#dae6ef</color>
+
 </resources>
