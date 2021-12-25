@@ -1,6 +1,14 @@
 <resources>
-    <string name="app_name">Homework_4</string>
-    <string name="greetings">Greetings!</string>
-    <string name="name">People`s Republic of China</string>
+    <string name="app_name">Homework_6</string>
+    <string name="button_text_summ">Summ</string>
+    <string name="button_text_on">On</string>
+    <string name="button_text_off">Off</string>
+    <string name="button_text_pause">Pause</string>
+    <string name="history_button">History</string>
+    <string name="current_number">0</string>
+    <string name="current_state_on">Countdown is active</string>
+    <string name="current_state_off">Countdown was stopped</string>
+    <string name="current_state_pause">Countdown on pause</string>
+    <string name="content_Desc">Set interval of timer</string>
 
 </resources>
