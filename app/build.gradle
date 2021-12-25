@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.homework_10b"
+        applicationId "com.example.homework_10c"
         minSdk 22
         targetSdk 31
         versionCode 1

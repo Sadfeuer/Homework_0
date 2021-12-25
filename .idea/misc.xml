@@ -3,26 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/inst/KelT/Homework_02/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/airplane.xml" value="0.37407407407407406" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_beach_access_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_business_center_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_cake_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_child_friendly_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_directions_bike_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_fitness_center_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_free_breakfast_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_local_airport_24.xml" value="0.37407407407407406" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_mood_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_palette_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/ic_baseline_school_24.xml" value="0.225" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/line.xml" value="0.37407407407407406" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/drawable/separator.xml" value="1.2625" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/layout/activity_main.xml" value="0.31657608695652173" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/layout/filler.xml" value="0.31657608695652173" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/layout/line.xml" value="0.31657608695652173" />
-        <entry key="..\:/inst/KelT/Homework_10b/app/src/main/res/layout/my_toolbar.xml" value="0.31657608695652173" />
+        <entry key="..\:/inst/KelT/Homework_02/app/src/main/res/layout/activity_main.xml" value="0.3038949275362319" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/circle.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/ic_baseline_directions_24.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/ic_baseline_insert_link_24.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/ic_baseline_mood_24.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/drawable/rectangle.xml" value="0.3685185185185185" />
+        <entry key="..\:/inst/KelT/Homework_10c/app/src/main/res/layout/activity_main.xml" value="0.31023550724637683" />
       </map>
     </option>
   </component>

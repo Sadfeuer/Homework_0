@@ -1,391 +1,333 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include layout="@layout/my_toolbar" />
+    <TextView
+        android:id="@+id/personal_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/personal_page"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-    <TableLayout
+    <LinearLayout
+        android:id="@+id/info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="10dp">
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <TableRow
-            android:layout_margin="5dp"
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="76dp"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_baseline_mood_24" />
+
+        <LinearLayout
+            android:id="@+id/posts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:id="@+id/palette"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_palette_24" />
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/art"
+                android:id="@+id/countPosts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/art"
+                android:layout_margin="5dp"
+                android:text="@string/onetwofive"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:id="@+id/cake"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_cake_24" />
 
             <TextView
-                android:id="@+id/party"
+                android:id="@+id/textPosts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/party"
+                android:layout_margin="5dp"
+                android:text="@string/posts"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
-        </TableRow>
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
+        </LinearLayout>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/followers_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:id="@+id/school"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_school_24" />
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/education"
+                android:id="@+id/countFollowers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/education"
+                android:layout_margin="5dp"
+                android:text="@string/twozeroK"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:id="@+id/bike"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_directions_bike_24" />
 
             <TextView
-                android:id="@+id/cycling"
+                android:id="@+id/followers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cycling"
+                android:layout_margin="5dp"
+                android:text="@string/followers"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/following_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:id="@+id/airport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_local_airport_24" />
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/travel"
+                android:id="@+id/counting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/travel"
+                android:layout_margin="5dp"
+                android:text="@string/twotwo"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:id="@+id/smile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_mood_24" />
 
             <TextView
-                android:id="@+id/mood"
+                android:id="@+id/following"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mood"
+                android:layout_margin="5dp"
+                android:text="@string/following"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
-        </TableRow>
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
+        </LinearLayout>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
+    </LinearLayout>
 
-        <TableRow
-            android:layout_margin="5dp"
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/username"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/description"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/line_second"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_vertical">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/coffee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_free_breakfast_24" />
+                android:id="@+id/icon_direction"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_directions_24" />
 
             <TextView
-                android:id="@+id/breakfast"
+                android:id="@+id/directions_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/breakfast"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </TableRow>
+                android:text="@string/directions"
+                android:textColor="@color/lazure"
+                android:textSize="14sp" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
+        </LinearLayout>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_vertical">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/fitness"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_fitness_center_24" />
+                android:id="@+id/imageCall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_call_24" />
 
             <TextView
-                android:id="@+id/gym"
+                android:id="@+id/textCall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gym"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </TableRow>
+                android:text="@string/call"
+                android:textColor="@color/lazure"
+                android:textSize="14sp" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
+        </LinearLayout>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_vertical">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/child"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_child_friendly_24" />
+                android:id="@+id/star"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_star_24" />
 
             <TextView
-                android:id="@+id/kids"
+                android:id="@+id/save_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/kids"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </TableRow>
+                android:text="@string/save"
+                android:textColor="@color/lazure"
+                android:textSize="14sp" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
+        </LinearLayout>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
-
-        <TableRow
-            android:layout_margin="5dp"
+        <LinearLayout
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_vertical">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/business"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_business_center_24" />
+                android:id="@+id/insert"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_insert_link_24" />
 
             <TextView
-                android:id="@+id/job"
+                android:id="@+id/website_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/job"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </TableRow>
+                android:text="@string/website"
+                android:textColor="@color/lazure"
+                android:textSize="14dp" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey">
+        </LinearLayout>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/line" />
-        </TableRow>
+    </LinearLayout>
 
-        <TableRow
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical">
+    <ImageView
+        android:src="@drawable/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
 
-            <ImageView
-                android:id="@+id/beach"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/icon"
-                app:srcCompat="@drawable/ic_baseline_beach_access_24" />
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/vacation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/vacation"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </TableRow>
-    </TableLayout>
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"  />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"  />
+
+        <ImageView
+            android:src="@drawable/rectangle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"  />
+
+    </LinearLayout>
 
 </LinearLayout>

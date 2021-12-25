@@ -1,16 +1,17 @@
 <resources>
-    <string name="app_name">Homework_10b</string>
-    <string name="topics">Topics</string>
-    <string name="art">Art</string>
-    <string name="party">Party</string>
-    <string name="education">Education</string>
-    <string name="cycling">Cycling</string>
-    <string name="travel">Travel</string>
-    <string name="mood">Mood</string>
-    <string name="breakfast">Breakfast</string>
-    <string name="gym">Gym</string>
-    <string name="kids">Kids</string>
-    <string name="job">Job</string>
-    <string name="vacation">Vacation</string>
-    <string name="icon">Icon</string>
+    <string name="app_name">Homework_10c</string>
+    <string name="directions">DIRECTIONS</string>
+    <string name="call">CALL</string>
+    <string name="save">SAVE</string>
+    <string name="website">WEBSITE</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="address">Address</string>
+    <string name="description">Description</string>
+    <string name="personal_page">Personal page</string>
+    <string name="username">Username</string>
+    <string name="onetwofive">125</string>
+    <string name="twozeroK">20K</string>
+    <string name="twotwo">22</string>
 </resources>

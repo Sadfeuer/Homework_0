@@ -1,4 +1,4 @@
-package com.example.homework_10b
+package com.example.homework_10c
 
 import org.junit.Test
 

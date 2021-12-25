@@ -1,4 +1,4 @@
-package com.example.homework_10b
+package com.example.homework_10c
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
