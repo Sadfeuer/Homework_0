@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">Homework_10d</string>
-    <string name="android_cource">Android cource</string>
+    <string name="app_name">Homework_10e</string>
+    <string name="price">Price</string>
+    <string name="location">Location</string>
+    <string name="inventory">Inventory</string>
+    <string name="weight">Weight</string>
+    <string name="photo">PHOTO</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
 </resources>
