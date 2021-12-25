@@ -3,20 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/border.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box.xml" value="0.3875" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box2.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box3.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box4.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box5.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box6.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box7.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/box8.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/red_backgroun.xml" value="0.37407407407407406" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/drawable/selector.xml" value="0.3880208333333333" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/inst/KelT/Homework_11/app/src/main/res/layout/paint_view.xml" value="0.1" />
+        <entry key="..\:/inst/KelT/Homework_12/app/src/main/res/layout/activity_image_full.xml" value="0.1752786220871327" />
+        <entry key="..\:/inst/KelT/Homework_12/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/inst/KelT/Homework_12/app/src/main/res/layout/custom_row.xml" value="0.371875" />
       </map>
     </option>
   </component>
