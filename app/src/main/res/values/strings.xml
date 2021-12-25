@@ -1,9 +1,16 @@
 <resources>
-    <string name="app_name">Homework_10</string>
-    <string name="e_mail">E-mail</string>
-    <string name="example_email">example@exmpl.com</string>
-    <string name="password">Password</string>
-    <string name="forgot_password">Forgot password</string>
-    <string name="sign_in">Sign In</string>
-    <string name="authorization">Put your authorization data to enter</string>
+    <string name="app_name">Homework_10b</string>
+    <string name="topics">Topics</string>
+    <string name="art">Art</string>
+    <string name="party">Party</string>
+    <string name="education">Education</string>
+    <string name="cycling">Cycling</string>
+    <string name="travel">Travel</string>
+    <string name="mood">Mood</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="gym">Gym</string>
+    <string name="kids">Kids</string>
+    <string name="job">Job</string>
+    <string name="vacation">Vacation</string>
+    <string name="icon">Icon</string>
 </resources>
